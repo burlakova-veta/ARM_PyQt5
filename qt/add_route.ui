@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>add_route</class>
+ <widget class="QWidget" name="add_route">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>232</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Добавление маршрута</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <property name="horizontalSpacing">
+    <number>12</number>
+   </property>
+   <property name="verticalSpacing">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>25</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_number">
+     <property name="text">
+      <string>Номер_маршрута</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="text_number"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_id">
+     <property name="text">
+      <string>ID вида транспорта</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="text_id"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_length">
+     <property name="text">
+      <string>Протяженность маршрута</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="text_length"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_tariff">
+     <property name="text">
+      <string>Тариф</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="text_tariff"/>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

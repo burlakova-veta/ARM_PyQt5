@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BusManage</class>
+ <widget class="QMainWindow" name="BusManage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>701</width>
+    <height>581</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Троллейбусное управление</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_6">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="documentMode">
+       <bool>true</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_flight">
+       <attribute name="title">
+        <string>Выезды</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="verticalSpacing">
+         <number>12</number>
+        </property>
+        <item row="1" column="3">
+         <widget class="QPushButton" name="btn_del_flight">
+          <property name="text">
+           <string>Удалить</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="4">
+         <widget class="QTableView" name="table_flight"/>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="btn_edit_flight">
+          <property name="text">
+           <string>Изменить</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="btn_add_flight">
+          <property name="text">
+           <string>Добавить</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="btn_update_flight">
+          <property name="text">
+           <string>Обновить</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_staff">
+       <attribute name="title">
+        <string>Персонал</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <property name="verticalSpacing">
+         <number>12</number>
+        </property>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="btn_add_staff">
+          <property name="text">
+           <string>Добавить</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="4">
+         <widget class="QTableView" name="table_staff"/>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="btn_edit_staff">
+          <property name="text">
+           <string>Изменить</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QPushButton" name="btn_del_staff">
+          <property name="text">
+           <string>Удалить</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="btn_update_staff">
+          <property name="text">
+           <string>Обновить</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_route">
+       <attribute name="title">
+        <string>Маршрут</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="verticalSpacing">
+         <number>12</number>
+        </property>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="btn_edit_route">
+          <property name="text">
+           <string>Изменить</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QPushButton" name="btn_del_route">
+          <property name="text">
+           <string>Удалить</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="4">
+         <widget class="QTableView" name="table_route"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="btn_add_route">
+          <property name="text">
+           <string>Добавить</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="btn_update_route">
+          <property name="text">
+           <string>Обновить</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_pos_cl">
+       <attribute name="title">
+        <string>Должности_кл</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_7">
+        <property name="verticalSpacing">
+         <number>12</number>
+        </property>
+        <item row="0" column="0" colspan="3">
+         <widget class="QTableView" name="table_pc"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="btn_add_pc">
+          <property name="text">
+           <string>Добавить</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="btn_del_pc">
+          <property name="text">
+           <string>Удалить</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="btn_update_pc">
+          <property name="text">
+           <string>Обновить</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_trans_cl">
+       <attribute name="title">
+        <string>Транспорт_кл</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <property name="verticalSpacing">
+         <number>12</number>
+        </property>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="btn_del_tc">
+          <property name="text">
+           <string>Удалить</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="3">
+         <widget class="QTableView" name="table_tc"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="btn_add_tc">
+          <property name="text">
+           <string>Добавить</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="btn_update_tc">
+          <property name="text">
+           <string>Обновить</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_search">
+       <attribute name="title">
+        <string>Поиск</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <property name="spacing">
+         <number>11</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="group_control">
+          <property name="title">
+           <string>GroupBox</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <property name="spacing">
+            <number>11</number>
+           </property>
+           <item>
+            <widget class="QGroupBox" name="group_sex">
+             <property name="title">
+              <string>Пол</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QCheckBox" name="woman">
+                <property name="text">
+                 <string>Женский</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="man">
+                <property name="text">
+                 <string>Мужской</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="group_age">
+             <property name="title">
+              <string>Возраст</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <widget class="QCheckBox" name="age63">
+                <property name="text">
+                 <string>Младше 63</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="age6365">
+                <property name="text">
+                 <string>63-65 лет</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="age65">
+                <property name="text">
+                 <string>Старше 65</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_search">
+             <property name="text">
+              <string>Поиск</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="text_search"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_ok">
+          <property name="text">
+           <string>Выполнить</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableView" name="table_search"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

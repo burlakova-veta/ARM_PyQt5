@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>edit_staff</class>
+ <widget class="QWidget" name="edit_staff">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>442</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Изменение данных о сотруднике</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <property name="horizontalSpacing">
+    <number>12</number>
+   </property>
+   <property name="verticalSpacing">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>25</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_surname">
+     <property name="text">
+      <string>Фамилия</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="surname"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_name">
+     <property name="text">
+      <string>Имя</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="name"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_patronymic">
+     <property name="text">
+      <string>Отчество</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="patronymic"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_id">
+     <property name="text">
+      <string>ID должности</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="id"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_passport">
+     <property name="text">
+      <string>Паспорт</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QLineEdit" name="passport"/>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_phone">
+     <property name="text">
+      <string>Телефон</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QLineEdit" name="phone"/>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_birthdate">
+     <property name="text">
+      <string>Дата рождения</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QLineEdit" name="birthdate"/>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_adress">
+     <property name="text">
+      <string>Адрес</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QLineEdit" name="adress"/>
+   </item>
+   <item row="8" column="0">
+    <widget class="QLabel" name="label_class_driver">
+     <property name="text">
+      <string>Класс (для водителей)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="QLineEdit" name="class_driver"/>
+   </item>
+   <item row="9" column="1">
+    <widget class="QDialogButtonBox" name="control">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

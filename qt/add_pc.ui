@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>add_pc</class>
+ <widget class="QWidget" name="add_pc">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>106</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Добавление должности</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <property name="horizontalSpacing">
+    <number>12</number>
+   </property>
+   <property name="verticalSpacing">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>25</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_pc">
+     <property name="text">
+      <string>Вид транспорта</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="text_pc"/>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="control">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
